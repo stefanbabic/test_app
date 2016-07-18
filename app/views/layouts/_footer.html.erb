@@ -1,13 +1,13 @@
 <footer class="footer">
   <small>
-    <a href="https://de.linkedin.com/in/stefan-babic-54203b120/">Stefan Babić</a> / 
-    <a href="mailto:babic.stefan@gmail.com">babic.stefan@gmail.com</a>
+    <%= link_to "Stefan Babić", "https://de.linkedin.com/in/stefan-babic-54203b120/", :target => "_blank" %> / 
+    <%= mail_to "babic.stefan@gmail.com" %>
   </small>
   <nav>
     <ul>
       <li><%= link_to "Über mir", about_path %></li>
       <li><%= link_to "Kontakt", contact_path %></li>
-      <li><a href="http://weblog.rubyonrails.org/">News</a></li>
+      <li><%= link_to "News", "http://weblog.rubyonrails.org/", :target => "_blank" %>
     </ul>
   </nav>
 </footer>

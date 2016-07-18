@@ -279,3 +279,47 @@ input {
   width: auto;
   margin-left: 0;
 }
+
+/* contact page */
+
+#contact {
+    display: block;
+    letter-spacing: normal;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    word-spacing: normal;
+}
+
+section {
+  .inner {
+    margin: 0 auto;
+    max-width: 1253px;
+    overflow: hidden;
+    header {
+      margin-bottom: 20px;
+    }
+    .content {
+      margin: 0 20px;
+      .map {
+        position: relative;
+        padding-bottom: 35%;
+        height: 0;
+        overflow: hidden;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+          max-height: 400px;
+        }
+      }
+    }
+  }
+}
