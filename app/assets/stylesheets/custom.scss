@@ -2,8 +2,8 @@
 @import "bootstrap";
 
 $gray-medium-light: #eaeaea;
-$bgDefault      : #337ab7;
-$bgHighlight    : #337ab7;
+$bgDefault      : #000;
+$bgHighlight    : #000;
 $colDefault     : #ffffff;
 $colHighlight   : #d4d4d4;
 $dropDown       : false;
@@ -14,10 +14,19 @@ $dropDown       : false;
   box-sizing:         border-box;
 }
 
+@mixin background-size {
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: cover;
+}
+
 /* universal */
 
 body {
-  padding-top: 60px;
+  min-width: 320px;
+  height: 100%;
+  padding-top: 50px;
 }
 
 section {
@@ -28,10 +37,20 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
+.jumbotron {
+  background: #000 url("background_home.png") no-repeat center center;
+  @include background-size;
+  height: auto;
+  min-height: 520px;
+  margin-bottom: 0;
+  padding-top: 130px;
+  overflow: hidden;
+  .center {
+    text-align: center;
+    color: #fff;
+    h1 {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -54,7 +73,6 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
 }
 
 p {
@@ -74,9 +92,13 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: #d4d4d4;
     text-decoration: none;
   }
+}
+
+.navbar {
+  margin-bottom: 0;
 }
 
 .navbar-inverse {
@@ -146,7 +168,7 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 35px;
   padding-top: 5px;
   border-top: 1px solid $gray-light;
   color: $gray-light;
