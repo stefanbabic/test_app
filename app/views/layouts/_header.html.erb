@@ -6,7 +6,7 @@
         <li><%= link_to "Startseite",   root_path %></li>
         <li><%= link_to "Hilfe",   help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to "Users", '#' %></li>
+          <li><%= link_to "Alle Benutzer", users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Konto <b class="caret"></b>
