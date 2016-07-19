@@ -1,0 +1,5 @@
+Hallo <%= @user.name %>,
+
+Herzlich Willkommen auf meiner Webseite! Um Ihr Konto zu aktivieren, klicken Sie auf den Link unten:
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
