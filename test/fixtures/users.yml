@@ -6,7 +6,6 @@ stefan:
   activated: true
   activated_at: <%= Time.zone.now %>
 
-
 lars:
   name: Lars User
   email: user@post.com

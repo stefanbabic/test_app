@@ -1,15 +1,26 @@
 basketball:
   content: "I'm playing basketball!"
   created_at: <%= 10.minutes.ago %>
+  user: stefan
 
 training:
   content: "We have training today."
   created_at: <%= 3.years.ago %>
+  user: stefan
 
 game_video:
   content: "Video from our last game: https://youtu.be/sIWzW8cZLDU"
   created_at: <%= 2.hours.ago %>
+  user: stefan
 
 last_post:
   content: "App almost finished"
   created_at: <%= Time.zone.now %>
+  user: stefan
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: stefan
+<% end %>
