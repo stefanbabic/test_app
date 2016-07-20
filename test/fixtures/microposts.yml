@@ -1,9 +1,15 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+basketball:
+  content: "I'm playing basketball!"
+  created_at: <%= 10.minutes.ago %>
 
-one:
-  content: MyText
-  user: one
+training:
+  content: "We have training today."
+  created_at: <%= 3.years.ago %>
 
-two:
-  content: MyText
-  user: two
+game_video:
+  content: "Video from our last game: https://youtu.be/sIWzW8cZLDU"
+  created_at: <%= 2.hours.ago %>
+
+last_post:
+  content: "App almost finished"
+  created_at: <%= Time.zone.now %>
