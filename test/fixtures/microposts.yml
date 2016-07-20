@@ -24,3 +24,23 @@ micropost_<%= n %>:
   created_at: <%= 42.days.ago %>
   user: stefan
 <% end %>
+
+weather:
+  content: "Today weather is really great!"
+  created_at: <%= 2.years.ago %>
+  user: lars
+
+job:
+  content: "I must finish my project!"
+  created_at: <%= 3.days.ago %>
+  user: lars
+
+train:
+  content: "I must go to catch my train."
+  created_at: <%= 10.minutes.ago %>
+  user: hans
+
+trip:
+  content: "Hey, Hans! Do you want to go on a trip?"
+  created_at: <%= 4.hours.ago %>
+  user: hans
